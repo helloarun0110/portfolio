@@ -4,16 +4,96 @@
     <title>Projects | Arun</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<section class="hero">
-    <h1>My Projects</h1>
+ <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Hello!</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="ed_skill.html">Ed. & Skill</a>
+    </nav>
+  </header>
 
-    <!-- Upload -->
-    <input type="file" id="mediaInput" accept="image/*,video/*">
-    <div id="preview"></div>
+
+
+<section class="projects">
+
+    <h1 class="project-title">My Projects</h1>
+
+    <!-- project 1 : tourwing   -->
+    <div class="project-card">
+
+        <div class="project-text">
+            <h2>TourWings – Tour Booking Web Application</h2>
+
+            <p>
+                Backend-focused web application built using <strong>FastAPI</strong> 
+                and <strong>SQL</strong>. The system supports tour listings,
+                booking workflows, and secure backend logic designed for
+                real-world tourism management use cases.
+            </p>
+
+            <a href="https://github.com/helloarun0110/tourwings-backend" class="btn secondary">View GitHub</a>
+        </div>
+
+        <div class="project-image">
+            <img src="assets/images/tourwing.png" alt="TourWings Project">
+        </div>
+
+    </div>
+
+    <!-- project 2 : pacman   -->
+    <div class="project-card">
+
+        <div class="project-text">
+            <h2>Pacman Game – Java OOP Project</h2>
+
+            <p>
+                Classic Pacman game developed using <strong>Java</strong>,
+                applying core Object-Oriented Programming concepts such as
+                inheritance, polymorphism, and encapsulation to build a
+                modular and maintainable game architecture.
+            </p>
+
+            <a href="https://github.com/helloarun0110/OOP-project-java" class="btn secondary">View GitHub</a>
+        </div>
+
+        <div class="project-image">
+            <img src="assets/images/pacman.png" alt="Pacman Game">
+        </div>
+
+    </div>
+
+
+    <!-- project 3 : sanke   -->
+    <div class="project-card">
+
+        <div class="project-text">
+            <h2>Snake Game – C++ (SDL)</h2>
+
+            <p>
+                Real-time snake game developed using <strong>C++</strong>
+                and <strong>SDL</strong>. Focused on game loop design,
+                event handling, rendering optimization, and performance
+                management in low-level game development.
+            </p>
+
+            <a href="https://github.com/helloarun0110/Academic-Projects/tree/main/game-project-150-(1/2)" class="btn secondary">View GitHub</a>
+        </div>
+
+        <div class="project-image">
+            <img src="assets/images/snake.png" alt="Snake Game">
+        </div>
+
+    </div>
+
 </section>
 
+
 <script src="js/main.js"></script>
+
 </body>
 </html>
