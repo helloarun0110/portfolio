@@ -106,7 +106,7 @@ body {
 
 .hero-left {
   flex: 1;
-  max-width: 50%;
+  max-width: 70%;
   margin-left: 70px;
    margin-top: 0px;
 }
@@ -218,35 +218,32 @@ body {
 
 
 
-
-
-
-/* project */
+/*  project */
 
 .projects {
-  padding: 60px;
+  padding: 60px 20px; 
 }
 
 .project-title {
   text-align: center;
-  font-size: 60px;
+  font-size: clamp(36px, 5vw, 60px); 
   margin-bottom: 50px;
 }
 
 
 .project-card {
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
 
   background: #0f1a2e;
   border-radius: 25px;
-  padding: 40px;
+  padding: 40px 20px; 
   margin-bottom: 40px;
-  gap: 40px;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 20px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .project-card:hover {
   transform: translateY(-10px);
@@ -258,35 +255,40 @@ body {
 }
 
 
-
 .project-text {
-  width: 55%;
-  margin: 100px;
+  flex: 1 1 300px; 
+  margin: 0; 
+  min-width: 280px; 
 }
 
 .project-text h2 {
   margin-bottom: 20px;
   color: #7a6cff;
+  font-size: clamp(20px, 2.5vw, 28px); 
 }
 
 .project-text p {
   color: #ccc;
   line-height: 1.6;
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: clamp(16px, 1.5vw, 20px); 
+  margin-bottom: 20px;
 }
-
 
 
 .project-image {
-  width: 40%;
+  flex: 1 1 300px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  min-width: 280px; 
 }
 
 .project-image img {
-  width: 500px;
-  height: 400px;
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
   border-radius: 20px;
-  margin-left: 400px;
+  display: block;
 }
 
 
@@ -297,6 +299,26 @@ body {
 }
 
 
+@media (max-width: 900px) {
+  .project-card {
+    flex-direction: column; 
+    padding: 20px;
+  }
+
+  .project-text, .project-image {
+    flex: 1 1 100%;
+    min-width: auto; 
+    margin: 0;
+  }
+
+  .project-text h2 {
+    text-align: center; 
+  }
+
+  .project-text p {
+    text-align: center; 
+  }
+}
 
 
 /* ed & skill */
