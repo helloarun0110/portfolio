@@ -13,3 +13,63 @@ readMoreBtn.addEventListener("click", () => {
 });
 
 
+
+
+const text = "SWE Student at SUST | Backend Developer | AI/ML & CV Enthusiast";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").textContent += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 60);
+  }
+}
+
+typeEffect();
+
+
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+//   // ===== Scroll Reveal =====
+//   const items = document.querySelectorAll(".timeline-item");
+
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("show");
+//       }
+//     });
+//   }, { threshold: 0.2 });
+
+//   items.forEach(item => observer.observe(item));
+
+// });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const items = document.querySelectorAll(".timeline-item");
+
+  console.log("Found items:", items.length);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  items.forEach(item => observer.observe(item));
+
+});
