@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +6,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* PAGE SETUP */
 html, body {
     width: 100%;
     height: 100%;
 
 }
 
-/* OUTER PAGE (TOP & BOTTOM GAP) */
 .page {
     min-height: 100vh;
-    padding: 40px 0;        /* gap top & bottom */
+    padding: 40px 0;        
     background: #f4f4f4;
 }
 
-/* RESUME LAYOUT */
+
 .resume {
     width: 100%;
     max-width: 1200px;
@@ -31,7 +29,7 @@ html, body {
 
 }
 
-/* LEFT SIDEBAR */
+
 .sidebar {
     width: 30%;
     background: #1f2933;
@@ -61,7 +59,7 @@ html, body {
     text-decoration: none;
 }
 
-/* RIGHT CONTENT */
+
 .content {
     width: 70%;
     padding: 30px;
